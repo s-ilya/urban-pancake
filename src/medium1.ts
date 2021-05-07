@@ -5,7 +5,7 @@
 // Нужно заменить FIXME на правильный тип вычисленный на основе Order
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-type FIXME = Extract<Order, OrderInitial | OrderInWork>;
+type FIXME = OrderInitial | OrderInWork;
 
 type Order = OrderInitial | OrderInWork | OrderBuyingSupplies | OrderProducing | OrderFullfilled;
 
