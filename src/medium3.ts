@@ -15,9 +15,9 @@ type OrderBuyingSupplies = "buyingSupplies"
 type OrderProducing = "producing"
 type OrderFulfilled = "fullfilled"
 
-type UserOrderState = OrderInitial | OrderInWork | OrderFulfilled
+type OrderState = OrderInitial | OrderInWork | OrderFulfilled | OrderBuyingSupplies | OrderProducing
 
-type OrderState = UserOrderState | OrderBuyingSupplies | OrderProducing
+type UserOrderState = Exclude<OrderState, OrderBuyingSupplies | OrderProducing>
 
 // Hint: type guards
 export const getUserOrderStates = (orderStates: OrderState[]): FIXME =>
