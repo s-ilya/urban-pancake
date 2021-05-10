@@ -7,7 +7,7 @@
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type FIXME = OrderInitial | OrderInWork;
 
-type Order = OrderInitial | OrderInWork | OrderBuyingSupplies | OrderProducing | OrderFullfilled;
+type Order = FIXME | OrderBuyingSupplies | OrderProducing | OrderFullfilled;
 
 type OrderInitial = {
   state: 'initial';
