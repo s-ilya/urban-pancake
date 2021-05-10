@@ -5,7 +5,7 @@
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 import * as React from "react";
 
-type FIXME<T> = ReturnType<() => React.ComponentType<T>["defaultProps"]>;
+type FIXME<T> = React.ComponentType<T>["defaultProps"];
 
 // Hint: infer
 export const getDefaultProps = <T>(
