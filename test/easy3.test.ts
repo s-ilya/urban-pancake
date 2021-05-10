@@ -1,10 +1,7 @@
 import { omit } from '../src/easy3';
 
 test('omit key from object', () => {
-  const record: {
-    one: number;
-    two: number;
-  } = {
+  const record = {
     one: 1,
     two: 2,
   };
